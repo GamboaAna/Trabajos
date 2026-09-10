@@ -1,0 +1,15 @@
+C:\Users\hp\Desktop\Trabajos Est\busquedas\normal\busqno\bin\Debug\net10.0\busqno.exe
+C:\Users\hp\Desktop\Trabajos Est\busquedas\normal\busqno\bin\Debug\net10.0\busqno.deps.json
+C:\Users\hp\Desktop\Trabajos Est\busquedas\normal\busqno\bin\Debug\net10.0\busqno.runtimeconfig.json
+C:\Users\hp\Desktop\Trabajos Est\busquedas\normal\busqno\bin\Debug\net10.0\busqno.dll
+C:\Users\hp\Desktop\Trabajos Est\busquedas\normal\busqno\bin\Debug\net10.0\busqno.pdb
+C:\Users\hp\Desktop\Trabajos Est\busquedas\normal\busqno\obj\Debug\net10.0\busqno.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Desktop\Trabajos Est\busquedas\normal\busqno\obj\Debug\net10.0\busqno.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\Trabajos Est\busquedas\normal\busqno\obj\Debug\net10.0\busqno.AssemblyInfo.cs
+C:\Users\hp\Desktop\Trabajos Est\busquedas\normal\busqno\obj\Debug\net10.0\busqno.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\Trabajos Est\busquedas\normal\busqno\obj\Debug\net10.0\busqno.sourcelink.json
+C:\Users\hp\Desktop\Trabajos Est\busquedas\normal\busqno\obj\Debug\net10.0\busqno.dll
+C:\Users\hp\Desktop\Trabajos Est\busquedas\normal\busqno\obj\Debug\net10.0\refint\busqno.dll
+C:\Users\hp\Desktop\Trabajos Est\busquedas\normal\busqno\obj\Debug\net10.0\busqno.pdb
+C:\Users\hp\Desktop\Trabajos Est\busquedas\normal\busqno\obj\Debug\net10.0\busqno.genruntimeconfig.cache
+C:\Users\hp\Desktop\Trabajos Est\busquedas\normal\busqno\obj\Debug\net10.0\ref\busqno.dll

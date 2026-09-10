@@ -1,0 +1,15 @@
+C:\Users\hp\Desktop\Trabajos Est\insercionarray\inser3\inser\bin\Debug\net10.0\inser.exe
+C:\Users\hp\Desktop\Trabajos Est\insercionarray\inser3\inser\bin\Debug\net10.0\inser.deps.json
+C:\Users\hp\Desktop\Trabajos Est\insercionarray\inser3\inser\bin\Debug\net10.0\inser.runtimeconfig.json
+C:\Users\hp\Desktop\Trabajos Est\insercionarray\inser3\inser\bin\Debug\net10.0\inser.dll
+C:\Users\hp\Desktop\Trabajos Est\insercionarray\inser3\inser\bin\Debug\net10.0\inser.pdb
+C:\Users\hp\Desktop\Trabajos Est\insercionarray\inser3\inser\obj\Debug\net10.0\inser.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Desktop\Trabajos Est\insercionarray\inser3\inser\obj\Debug\net10.0\inser.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\Trabajos Est\insercionarray\inser3\inser\obj\Debug\net10.0\inser.AssemblyInfo.cs
+C:\Users\hp\Desktop\Trabajos Est\insercionarray\inser3\inser\obj\Debug\net10.0\inser.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\Trabajos Est\insercionarray\inser3\inser\obj\Debug\net10.0\inser.sourcelink.json
+C:\Users\hp\Desktop\Trabajos Est\insercionarray\inser3\inser\obj\Debug\net10.0\inser.dll
+C:\Users\hp\Desktop\Trabajos Est\insercionarray\inser3\inser\obj\Debug\net10.0\refint\inser.dll
+C:\Users\hp\Desktop\Trabajos Est\insercionarray\inser3\inser\obj\Debug\net10.0\inser.pdb
+C:\Users\hp\Desktop\Trabajos Est\insercionarray\inser3\inser\obj\Debug\net10.0\inser.genruntimeconfig.cache
+C:\Users\hp\Desktop\Trabajos Est\insercionarray\inser3\inser\obj\Debug\net10.0\ref\inser.dll
