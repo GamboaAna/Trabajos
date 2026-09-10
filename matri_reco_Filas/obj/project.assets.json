@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hp\\Desktop\\Trabajos\\matri_reco\\matri_reco.csproj",
+      "projectUniqueName": "c:\\Users\\hp\\Desktop\\Trabajos\\matri_reco_Filas\\matri_reco.csproj",
       "projectName": "matri_reco",
-      "projectPath": "C:\\Users\\hp\\Desktop\\Trabajos\\matri_reco\\matri_reco.csproj",
+      "projectPath": "c:\\Users\\hp\\Desktop\\Trabajos\\matri_reco_Filas\\matri_reco.csproj",
       "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hp\\Desktop\\Trabajos\\matri_reco\\obj\\",
+      "outputPath": "c:\\Users\\hp\\Desktop\\Trabajos\\matri_reco_Filas\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",

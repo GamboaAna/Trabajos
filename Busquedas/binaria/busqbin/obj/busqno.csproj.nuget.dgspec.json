@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hp\\Desktop\\Trabajos\\busquedas\\binaria\\busqbin\\busqno.csproj": {}
+    "c:\\Users\\hp\\Desktop\\Trabajos\\Busquedas\\binaria\\busqbin\\busqno.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hp\\Desktop\\Trabajos\\busquedas\\binaria\\busqbin\\busqno.csproj": {
+    "c:\\Users\\hp\\Desktop\\Trabajos\\Busquedas\\binaria\\busqbin\\busqno.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hp\\Desktop\\Trabajos\\busquedas\\binaria\\busqbin\\busqno.csproj",
+        "projectUniqueName": "c:\\Users\\hp\\Desktop\\Trabajos\\Busquedas\\binaria\\busqbin\\busqno.csproj",
         "projectName": "busqno",
-        "projectPath": "C:\\Users\\hp\\Desktop\\Trabajos\\busquedas\\binaria\\busqbin\\busqno.csproj",
+        "projectPath": "c:\\Users\\hp\\Desktop\\Trabajos\\Busquedas\\binaria\\busqbin\\busqno.csproj",
         "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hp\\Desktop\\Trabajos\\busquedas\\binaria\\busqbin\\obj\\",
+        "outputPath": "c:\\Users\\hp\\Desktop\\Trabajos\\Busquedas\\binaria\\busqbin\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
