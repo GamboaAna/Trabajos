@@ -3,13 +3,22 @@ using System.Collections.Generic;
 
 class Program
 {
-    static int Buscar(List<int> arr, int tam, int num)
+    static int buscar(List<int> arr, int l, int h, int num)
     {
-        for (int i = 0; i < tam; i++)
+        while (l <= h)
         {
-            if (arr[i] == num)
+            int mid = l + (h - l) / 2;
+            if (arr[mid] == num)
             {
-                return i;
+                return mid;
+            }
+            else if (arr[mid] < num)
+            {
+                l = mid + 1;
+            }
+            else
+            {
+                h = mid - 1;
             }
         }
         return -1;
@@ -21,14 +30,14 @@ class Program
         int num = 40;
         int tam = arr.Count;
 
-        int idx = Buscar(arr, tam, num);
+        int idx = buscar(arr, 0, tam - 1, num);
         if (idx != -1)
         {
             Console.WriteLine("El elemento se encuentra en la posicion: " + (idx + 1));
         }
         else
         {
-            Console.WriteLine("No se encuentra el elemento.");
+            Console.WriteLine("El elemento no se encuentra.");
         }
     }
 }

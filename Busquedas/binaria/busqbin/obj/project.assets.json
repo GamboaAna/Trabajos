@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\hp\\Desktop\\Trabajos\\Busquedas\\binaria\\busqno\\busqno.csproj",
+      "projectUniqueName": "C:\\Users\\hp\\Desktop\\Trabajos\\busquedas\\binaria\\busqbin\\busqno.csproj",
       "projectName": "busqno",
-      "projectPath": "c:\\Users\\hp\\Desktop\\Trabajos\\Busquedas\\binaria\\busqno\\busqno.csproj",
+      "projectPath": "C:\\Users\\hp\\Desktop\\Trabajos\\busquedas\\binaria\\busqbin\\busqno.csproj",
       "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\hp\\Desktop\\Trabajos\\Busquedas\\binaria\\busqno\\obj\\",
+      "outputPath": "C:\\Users\\hp\\Desktop\\Trabajos\\busquedas\\binaria\\busqbin\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
