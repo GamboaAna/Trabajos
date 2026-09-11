@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("busqno")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+72c5b26a62f23614c27f549808d887e03af401a0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+36b36e67417a1460ee52ee481960bdea3f362b00")]
 [assembly: System.Reflection.AssemblyProductAttribute("busqno")]
 [assembly: System.Reflection.AssemblyTitleAttribute("busqno")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

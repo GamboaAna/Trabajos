@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Arr_inversos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+36b36e67417a1460ee52ee481960bdea3f362b00")]
 [assembly: System.Reflection.AssemblyProductAttribute("Arr_inversos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Arr_inversos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

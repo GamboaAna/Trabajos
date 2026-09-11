@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("matri_reco")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a44b2d12731c59a6da8eea44649eccc2dc6791fe")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+36b36e67417a1460ee52ee481960bdea3f362b00")]
 [assembly: System.Reflection.AssemblyProductAttribute("matri_reco")]
 [assembly: System.Reflection.AssemblyTitleAttribute("matri_reco")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

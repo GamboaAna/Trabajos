@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\hp\\Desktop\\Trabajos\\matri_reco_Filas\\matri_reco.csproj": {}
+    "C:\\Users\\hp\\Desktop\\Trabajos\\matri_reco_Filas\\matri_reco.csproj": {}
   },
   "projects": {
-    "c:\\Users\\hp\\Desktop\\Trabajos\\matri_reco_Filas\\matri_reco.csproj": {
+    "C:\\Users\\hp\\Desktop\\Trabajos\\matri_reco_Filas\\matri_reco.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\hp\\Desktop\\Trabajos\\matri_reco_Filas\\matri_reco.csproj",
+        "projectUniqueName": "C:\\Users\\hp\\Desktop\\Trabajos\\matri_reco_Filas\\matri_reco.csproj",
         "projectName": "matri_reco",
-        "projectPath": "c:\\Users\\hp\\Desktop\\Trabajos\\matri_reco_Filas\\matri_reco.csproj",
+        "projectPath": "C:\\Users\\hp\\Desktop\\Trabajos\\matri_reco_Filas\\matri_reco.csproj",
         "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\hp\\Desktop\\Trabajos\\matri_reco_Filas\\obj\\",
+        "outputPath": "C:\\Users\\hp\\Desktop\\Trabajos\\matri_reco_Filas\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
