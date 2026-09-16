@@ -1,14 +1,14 @@
 function bubbleSort(a) {
     let s = a.length;
     for (let i = 0; i < s; i++) {
-        let isSwapped = false;
+        let cambio = false;
         for (let i = 0; i < s - i - 1; i++) {
             if (a[i] > a[i + 1]) {
                 [a[i], a[i + 1]] = [a[i + 1], a[i]];
-                isSwapped = true;
+                cambio = true;
             }
         }
-        if (isSwapped === false) {
+        if (cambio === false) {
             break;
         }
     }
