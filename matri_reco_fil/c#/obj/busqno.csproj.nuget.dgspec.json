@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hp\\Desktop\\Trabajos\\matri_reco_colum\\matri_reco.csproj": {}
+    "C:\\Users\\hp\\Desktop\\Trabajos\\matri_reco_fil\\c#\\busqno.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hp\\Desktop\\Trabajos\\matri_reco_colum\\matri_reco.csproj": {
+    "C:\\Users\\hp\\Desktop\\Trabajos\\matri_reco_fil\\c#\\busqno.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hp\\Desktop\\Trabajos\\matri_reco_colum\\matri_reco.csproj",
-        "projectName": "matri_reco",
-        "projectPath": "C:\\Users\\hp\\Desktop\\Trabajos\\matri_reco_colum\\matri_reco.csproj",
+        "projectUniqueName": "C:\\Users\\hp\\Desktop\\Trabajos\\matri_reco_fil\\c#\\busqno.csproj",
+        "projectName": "busqno",
+        "projectPath": "C:\\Users\\hp\\Desktop\\Trabajos\\matri_reco_fil\\c#\\busqno.csproj",
         "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hp\\Desktop\\Trabajos\\matri_reco_colum\\obj\\",
+        "outputPath": "C:\\Users\\hp\\Desktop\\Trabajos\\matri_reco_fil\\c#\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
