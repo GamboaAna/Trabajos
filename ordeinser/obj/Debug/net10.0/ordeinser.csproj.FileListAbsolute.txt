@@ -1,0 +1,15 @@
+C:\Users\hp\Desktop\Trabajos\ordeinser\bin\Debug\net10.0\ordeinser.exe
+C:\Users\hp\Desktop\Trabajos\ordeinser\bin\Debug\net10.0\ordeinser.deps.json
+C:\Users\hp\Desktop\Trabajos\ordeinser\bin\Debug\net10.0\ordeinser.runtimeconfig.json
+C:\Users\hp\Desktop\Trabajos\ordeinser\bin\Debug\net10.0\ordeinser.dll
+C:\Users\hp\Desktop\Trabajos\ordeinser\bin\Debug\net10.0\ordeinser.pdb
+C:\Users\hp\Desktop\Trabajos\ordeinser\obj\Debug\net10.0\ordeinser.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Desktop\Trabajos\ordeinser\obj\Debug\net10.0\ordeinser.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\Trabajos\ordeinser\obj\Debug\net10.0\ordeinser.AssemblyInfo.cs
+C:\Users\hp\Desktop\Trabajos\ordeinser\obj\Debug\net10.0\ordeinser.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\Trabajos\ordeinser\obj\Debug\net10.0\ordeinser.sourcelink.json
+C:\Users\hp\Desktop\Trabajos\ordeinser\obj\Debug\net10.0\ordeinser.dll
+C:\Users\hp\Desktop\Trabajos\ordeinser\obj\Debug\net10.0\refint\ordeinser.dll
+C:\Users\hp\Desktop\Trabajos\ordeinser\obj\Debug\net10.0\ordeinser.pdb
+C:\Users\hp\Desktop\Trabajos\ordeinser\obj\Debug\net10.0\ordeinser.genruntimeconfig.cache
+C:\Users\hp\Desktop\Trabajos\ordeinser\obj\Debug\net10.0\ref\ordeinser.dll
