@@ -1,6 +1,6 @@
 public class burbuja {
 
-    public static void bubbleSort(int[] a) {
+    public static void bubbleSorbr(int[] a) {
         int s = a.length;
         for (int i2 = 0; i2 < s; i2++) {
             boolean cambio = false;
