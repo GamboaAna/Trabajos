@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hp\\Desktop\\Trabajos\\Damasinglesas\\DamasInglesas.csproj": {}
+    "C:\\Users\\hp\\Desktop\\Trabajos\\DamasInglesas\\DamasInglesas.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hp\\Desktop\\Trabajos\\Damasinglesas\\DamasInglesas.csproj": {
+    "C:\\Users\\hp\\Desktop\\Trabajos\\DamasInglesas\\DamasInglesas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hp\\Desktop\\Trabajos\\Damasinglesas\\DamasInglesas.csproj",
+        "projectUniqueName": "C:\\Users\\hp\\Desktop\\Trabajos\\DamasInglesas\\DamasInglesas.csproj",
         "projectName": "DamasInglesas",
-        "projectPath": "C:\\Users\\hp\\Desktop\\Trabajos\\Damasinglesas\\DamasInglesas.csproj",
+        "projectPath": "C:\\Users\\hp\\Desktop\\Trabajos\\DamasInglesas\\DamasInglesas.csproj",
         "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hp\\Desktop\\Trabajos\\Damasinglesas\\obj\\",
+        "outputPath": "C:\\Users\\hp\\Desktop\\Trabajos\\DamasInglesas\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
