@@ -26,7 +26,7 @@ class Program
         int fichasX = 12;
         int fichasO = 12;
 
-        // Variables para manejar la captura múltiple en cadena
+        //variables para manejar la captura multiple en cadena
         bool debeSeguirCapturando = false;
         int filaObligada = -1;
         int colObligada = -1;
@@ -77,12 +77,8 @@ class Program
             int fo = int.Parse(Console.ReadLine());
             Console.Write("Columna origen: ");
             int co = int.Parse(Console.ReadLine());
-            Console.Write("Fila destino: ");
-            int fd = int.Parse(Console.ReadLine());
-            Console.Write("Columna destino: ");
-            int cd = int.Parse(Console.ReadLine());
 
-            if (fo < 0 || fo > 7 || co < 0 || co > 7 || fd < 0 || fd > 7 || cd < 0 || cd > 7)
+            if (fo < 0 || fo > 7 || co < 0 || co > 7)
             {
                 Console.WriteLine("Movimiento inválido: fuera del tablero D:");
                 continue;
@@ -96,7 +92,7 @@ class Program
                 continue;
             }
 
-            // Si venimos de una captura en cadena, solo se puede mover esa misma ficha
+            //captura cadena, valida si seguimos moviendo esa ficha
             if (debeSeguirCapturando && (fo != filaObligada || co != colObligada))
             {
                 Console.WriteLine("Movimiento inválido: debes seguir capturando con la misma ficha D:");
@@ -105,37 +101,111 @@ class Program
 
             bool esRey = EsRey(pieza);
 
-            bool direccionValida;
-            if (esRey)
-                direccionValida = true; // los reyes se mueven en cualquier dirección
-            else if (turno == 'x')
-                direccionValida = (fd > fo);
-            else
-                direccionValida = (fd < fo);
+            Console.Write("Dirección (i = izquierda, d = derecha): ");
+            string dirH = Console.ReadLine().Trim().ToLower();
 
-            if (!direccionValida)
+            int deltaCol;
+            if (dirH == "i") deltaCol = -1;
+            else if (dirH == "d") deltaCol = 1;
+            else
             {
-                Console.WriteLine("Movimiento invalido: esa ficha no puede moverse hacia atras lol");
+                Console.WriteLine("Movimiento inválido: escribe 'i' o 'd' D:");
                 continue;
             }
 
-            bool esIntentoDeCaptura = Math.Abs(fd - fo) == 2 && Math.Abs(cd - co) == 2;
+            int deltaFila;
+            if (esRey)
+            {
+                //los reyes pueden moverse pa donde quieran, hay que preguntar arriba o abajo
+                Console.Write("Dirección vertical (a = arriba, b = abajo): ");
+                string dirV = Console.ReadLine().Trim().ToLower();
 
-            // Si hay captura obligatoria en el tablero, no se permite mover sin comer
-            if (hayCapturaObligatoria && !esIntentoDeCaptura)
+                if (dirV == "a") deltaFila = -1;
+                else if (dirV == "b") deltaFila = 1;
+                else
+                {
+                    Console.WriteLine("Movimiento inválido: escribe 'a' o 'b' D:");
+                    continue;
+                }
+            }
+            else
+            {
+                //las fichas normales solo avanzan: 'x' hacia abajo, 'o' hacia arriba
+                deltaFila = (turno == 'x') ? 1 : -1;
+            }
+
+            int fSimple = fo + deltaFila;
+            int cSimple = co + deltaCol;
+            int fCaptura = fo + 2 * deltaFila;
+            int cCaptura = co + 2 * deltaCol;
+
+            bool simpleEnTablero = fSimple >= 0 && fSimple <= 7 && cSimple >= 0 && cSimple <= 7;
+            bool capturaEnTablero = fCaptura >= 0 && fCaptura <= 7 && cCaptura >= 0 && cCaptura <= 7;
+
+            //hay ficha enemiga al lado y detras esta libre = se puede comer
+            bool puedeCapturarAqui = capturaEnTablero
+                && tablero[fSimple, cSimple] != '.'
+                && Tipo(tablero[fSimple, cSimple]) != turno
+                && tablero[fCaptura, cCaptura] == '.';
+
+            //si pueden comer comen mhm
+            if (hayCapturaObligatoria && !puedeCapturarAqui)
             {
                 Console.WriteLine("Movimiento inválido: es obligatorio capturar D:");
                 continue;
             }
 
-            if (tablero[fd, cd] == '.' && Math.Abs(fd - fo) == 1 && Math.Abs(cd - co) == 1)
+            if (puedeCapturarAqui)
             {
+                int fd = fCaptura, cd = cCaptura;
+                int filaMedio = fSimple, colMedio = cSimple;
+
                 tablero[fd, cd] = pieza;
                 tablero[fo, co] = '.';
 
+                if (Tipo(tablero[filaMedio, colMedio]) == 'x') fichasX--;
+                else fichasO--;
+
+                tablero[filaMedio, colMedio] = '.';
+
                 bool coronado = Coronar(tablero, fd, cd);
 
-                historial[totalMovimientos] = turno + ": (" + fo + "," + co + ") -> (" + fd + "," + cd + ")" + (coronado ? " [corona]" : "");
+                historial[totalMovimientos] = turno + ": (" + fo + "," + co + ") -> (" + fd + "," + cd + ") [captura]" + (coronado ? " [corona]" : "");
+                totalMovimientos++;
+
+                Console.WriteLine("¡Capturaste una ficha! :DDD");
+
+                //verifica si puede comer 2 veces osiosi
+                if (PuedeCapturarDesde(tablero, fd, cd, turno))
+                {
+                    debeSeguirCapturando = true;
+                    filaObligada = fd;
+                    colObligada = cd;
+                    Console.WriteLine("¡Puedes seguir capturando con la misma ficha!");
+                }
+                else
+                {
+                    debeSeguirCapturando = false;
+                    if (turno == 'x')
+                        turno = 'o';
+                    else
+                        turno = 'x';
+                }
+            }
+            else if (simpleEnTablero && tablero[fSimple, cSimple] == '.')
+            {
+                if (debeSeguirCapturando)
+                {
+                    Console.WriteLine("Movimiento inválido: debes seguir capturando D:");
+                    continue;
+                }
+
+                tablero[fSimple, cSimple] = pieza;
+                tablero[fo, co] = '.';
+
+                bool coronado = Coronar(tablero, fSimple, cSimple);
+
+                historial[totalMovimientos] = turno + ": (" + fo + "," + co + ") -> (" + fSimple + "," + cSimple + ")" + (coronado ? " [corona]" : "");
                 totalMovimientos++;
 
                 debeSeguirCapturando = false;
@@ -144,50 +214,6 @@ class Program
                 else
                     turno = 'x';
             }
-            else if (tablero[fd, cd] == '.' && esIntentoDeCaptura)
-            {
-                int filaMedio = (fo + fd) / 2;
-                int colMedio = (co + cd) / 2;
-
-                if (tablero[filaMedio, colMedio] != '.' && Tipo(tablero[filaMedio, colMedio]) != turno)
-                {
-                    tablero[fd, cd] = pieza;
-                    tablero[fo, co] = '.';
-
-                    if (Tipo(tablero[filaMedio, colMedio]) == 'x') fichasX--;
-                    else fichasO--;
-
-                    tablero[filaMedio, colMedio] = '.';
-
-                    bool coronado = Coronar(tablero, fd, cd);
-
-                    historial[totalMovimientos] = turno + ": (" + fo + "," + co + ") -> (" + fd + "," + cd + ") [captura]" + (coronado ? " [corona]" : "");
-                    totalMovimientos++;
-
-                    Console.WriteLine("¡Capturaste una ficha! :DDD");
-
-                    // verifica si puede comer 2 veces osiosi
-                    if (PuedeCapturarDesde(tablero, fd, cd, turno))
-                    {
-                        debeSeguirCapturando = true;
-                        filaObligada = fd;
-                        colObligada = cd;
-                        Console.WriteLine("¡Puedes seguir capturando con la misma ficha!");
-                    }
-                    else
-                    {
-                        debeSeguirCapturando = false;
-                        if (turno == 'x')
-                            turno = 'o';
-                        else
-                            turno = 'x';
-                    }
-                }
-                else
-                {
-                    Console.WriteLine("Movimiento inválido D:");
-                }
-            }
             else
             {
                 Console.WriteLine("Movimiento inválido D:");
@@ -195,7 +221,7 @@ class Program
         }
     }
 
-    // Devuelve 'x' u 'o' sin importar si la ficha es normal o rey
+    //devuelve 'x' u 'o' aunq sean rey
     static char Tipo(char pieza)
     {
         return char.ToLower(pieza);
@@ -206,7 +232,7 @@ class Program
         return pieza == 'X' || pieza == 'O';
     }
 
-    // Si una ficha llega a la última fila la convierte en rey. Devuelve verda si coronó.
+    //si una ficha llega a la última fila la convierte en rey. Devuelve verda si coronó.
     static bool Coronar(char[,] tablero, int f, int c)
     {
         if (tablero[f, c] == 'x' && f == 7)
@@ -222,7 +248,7 @@ class Program
         return false;
     }
 
-    // Revisa si la ficha ubicada en (f,c) puede capturar alguna ficha enemiga 
+    //revisa si la ficha puede comer 
     static bool PuedeCapturarDesde(char[,] tablero, int f, int c, char turno)
     {
         char pieza = tablero[f, c];
@@ -264,9 +290,7 @@ class Program
         return false;
     }
 
-    // Códigos ANSI de color verdadero (24-bit). Esto funciona igual en cualquier
-    // terminal (VS Code, Windows Terminal, etc.) porque no depende del tema de la
-    // terminal como sí pasa con Console.ForegroundColor / BackgroundColor.
+    //odigos ANSI de color verdadero creo sellaman asi
     const string RESET = "\u001b[0m";
     const string CASILLA_CLARA = "\u001b[48;2;222;184;135m"; // fondo beige
     const string CASILLA_OSCURA = "\u001b[48;2;101;67;33m";  // fondo café oscuro
@@ -276,7 +300,7 @@ class Program
     const string FICHA_O_REY = "\u001b[38;2;184;134;11m";    // dorado oscuro
     const string TEXTO_VACIO = "\u001b[38;2;90;60;40m";      // apenas visible sobre la casilla
 
-    // Imprime el tablero con colores: casillas claras/oscuras y fichas de colores
+    //imprime los colores en el tablreo
     static void Imprimir(char[,] tablero)
     {
         Console.WriteLine();
