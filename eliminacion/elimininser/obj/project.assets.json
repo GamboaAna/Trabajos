@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hp\\Desktop\\Trabajos\\Trabajos.csproj",
+      "projectUniqueName": "c:\\Users\\hp\\Desktop\\Trabajos\\eliminacion\\elimininser\\Trabajos.csproj",
       "projectName": "Trabajos",
-      "projectPath": "C:\\Users\\hp\\Desktop\\Trabajos\\Trabajos.csproj",
+      "projectPath": "c:\\Users\\hp\\Desktop\\Trabajos\\eliminacion\\elimininser\\Trabajos.csproj",
       "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hp\\Desktop\\Trabajos\\obj\\",
+      "outputPath": "c:\\Users\\hp\\Desktop\\Trabajos\\eliminacion\\elimininser\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\hp\\Desktop\\Trabajos\\Trabajos.csproj": {}
+    "c:\\Users\\hp\\Desktop\\Trabajos\\eliminacion\\elimininser\\Trabajos.csproj": {}
   },
   "projects": {
-    "c:\\Users\\hp\\Desktop\\Trabajos\\Trabajos.csproj": {
+    "c:\\Users\\hp\\Desktop\\Trabajos\\eliminacion\\elimininser\\Trabajos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\hp\\Desktop\\Trabajos\\Trabajos.csproj",
+        "projectUniqueName": "c:\\Users\\hp\\Desktop\\Trabajos\\eliminacion\\elimininser\\Trabajos.csproj",
         "projectName": "Trabajos",
-        "projectPath": "c:\\Users\\hp\\Desktop\\Trabajos\\Trabajos.csproj",
+        "projectPath": "c:\\Users\\hp\\Desktop\\Trabajos\\eliminacion\\elimininser\\Trabajos.csproj",
         "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\hp\\Desktop\\Trabajos\\obj\\",
+        "outputPath": "c:\\Users\\hp\\Desktop\\Trabajos\\eliminacion\\elimininser\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
