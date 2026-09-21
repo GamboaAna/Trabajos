@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ordeinser")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+515c268b7e6cdf4b68b07d81ba74d4aac86ca520")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b98d93555b22670afb6c7377782b86f9710d4f8f")]
 [assembly: System.Reflection.AssemblyProductAttribute("ordeinser")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ordeinser")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

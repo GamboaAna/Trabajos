@@ -264,19 +264,49 @@ class Program
         return false;
     }
 
+    // Códigos ANSI de color verdadero (24-bit). Esto funciona igual en cualquier
+    // terminal (VS Code, Windows Terminal, etc.) porque no depende del tema de la
+    // terminal como sí pasa con Console.ForegroundColor / BackgroundColor.
+    const string RESET = "\u001b[0m";
+    const string CASILLA_CLARA = "\u001b[48;2;222;184;135m"; // fondo beige
+    const string CASILLA_OSCURA = "\u001b[48;2;101;67;33m";  // fondo café oscuro
+    const string FICHA_X = "\u001b[38;2;220;20;60m";         // rojo
+    const string FICHA_X_REY = "\u001b[38;2;139;0;0m";       // rojo oscuro
+    const string FICHA_O = "\u001b[38;2;255;215;0m";         // dorado
+    const string FICHA_O_REY = "\u001b[38;2;184;134;11m";    // dorado oscuro
+    const string TEXTO_VACIO = "\u001b[38;2;90;60;40m";      // apenas visible sobre la casilla
+
+    // Imprime el tablero con colores: casillas claras/oscuras y fichas de colores
     static void Imprimir(char[,] tablero)
     {
         Console.WriteLine();
         Console.WriteLine("    0   1   2   3   4   5   6   7");
-        Console.WriteLine("  +---+---+---+---+---+---+---+---+");
+
         for (int f = 0; f < 8; f++)
         {
+            Console.WriteLine("  +---+---+---+---+---+---+---+---+");
+
             Console.Write(f + " |");
             for (int c = 0; c < 8; c++)
-                Console.Write(" " + tablero[f, c] + " |");
+            {
+                bool casillaOscura = (f + c) % 2 == 1;
+                string fondo = casillaOscura ? CASILLA_OSCURA : CASILLA_CLARA;
+
+                char pieza = tablero[f, c];
+                string colorFicha;
+
+                if (pieza == '.')
+                    colorFicha = TEXTO_VACIO;
+                else if (Tipo(pieza) == 'x')
+                    colorFicha = EsRey(pieza) ? FICHA_X_REY : FICHA_X;
+                else
+                    colorFicha = EsRey(pieza) ? FICHA_O_REY : FICHA_O;
+
+                Console.Write(fondo + colorFicha + " " + pieza + " " + RESET + "|");
+            }
             Console.WriteLine();
-            Console.WriteLine("  +---+---+---+---+---+---+---+---+");
         }
+        Console.WriteLine("  +---+---+---+---+---+---+---+---+");
         Console.WriteLine();
     }
 }
